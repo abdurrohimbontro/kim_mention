@@ -5,8 +5,9 @@ module.exports = async (message) => {
   return `
 settings
 --------
-mentions mode: ${user.mode}
-name mentions mode: ${user.nameOpt}
+
+menyebutkan mode: ${user.mode}
+mode penyebutan nama: ${user.nameOpt}
 
 phrases
 -------
