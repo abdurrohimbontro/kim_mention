@@ -27,7 +27,7 @@ const client = new Discord.Client()
 
 client.on('ready', () => {
   console.log('Discord client ready')
-  client.user.setActivity('@mentionbot for help')
+  client.user.setActivity('@kimabsenbot for help')
 })
 
 client.on('guildCreate', guild => db.createGuild(guild.id))
