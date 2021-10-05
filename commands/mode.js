@@ -5,7 +5,7 @@ module.exports = async (message, arg) => {
     if (arg == 'channel') {
       let guild = await db.getGuild(message.guild.id)
       if (!guild.channelId) {
-        return 'Admin has not yet set mentions channel'
+        return 'Admin belum menyetel saluran sebutan'
       }
     }
     let dmChannelId
@@ -14,8 +14,8 @@ module.exports = async (message, arg) => {
       dmChannelId = dmChannel ? dmChannel.id : null
     }
     await db.setMode(message.guild.id, message.member, dmChannelId, arg)
-    return `Mode changed to ${arg}`
+    return `Mode berubah menjadi ${arg}`
   }
 
-  return 'Invalid option. Usage: `@mentionbot mode <channel|dm|off>`'
+  return 'Invalid option. Usage: `kimabsenbot mode <channel|dm|off>`'
 }
