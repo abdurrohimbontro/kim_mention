@@ -3,9 +3,9 @@ const db = require('../src/db')
 
 module.exports = async (message) => {
   if (!message.member.hasPermission(Discord.Permissions.FLAGS.ADMINISTRATOR)) {
-    return 'You must be an admin to init'
+    return 'Anda harus menjadi admin untuk init'
   }
 
   await db.createGuild(message.guild.id)
-  return 'Init successful'
+  return 'Init sukses'
 }
