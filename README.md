@@ -13,7 +13,7 @@ Ini adalah bot telegram dapat menyebut Anda ketika frasa tertentu yang Anda teta
 
 ##### Deploy the app
 
-    [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/abdurrohimbontro/kim_mention)
+    https://heroku.com/abdurrohimbontro/kim_mention
 
 #### Penggunaan
 
